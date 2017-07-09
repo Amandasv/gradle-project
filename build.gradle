@@ -1,7 +1,16 @@
 apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = 'main.java.hello.HelloWorld'
 
 repositories {
     mavenCentral()
+}
+
+jar {
+    baseName = 'gs-gradle'
+    version =  '0.1.0'
 }
 
 sourceCompatibility = 1.8
@@ -12,7 +21,5 @@ dependencies {
     testCompile "junit:junit:4.12"
 }
 
-jar {
-    baseName = 'gs-gradle'
-    version =  '0.1.0'
-}
+
+
