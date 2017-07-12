@@ -29,9 +29,8 @@ proguard/
 .idea/
 
 #Gradle
-.gradletasknamecache
-.gradle/
-build/
+.gradle
+/build/
 bin/
 
 # Ignore Gradle GUI config
